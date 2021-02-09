@@ -17,6 +17,7 @@ module.exports = function(app) {
 
     app.get("/stats", (req, res) => {
         if (req) {
+            //needs db.{dbname}.findAll() to display stats?
             return res.redirect("stats");
         }
         //Need something else for all three of the above app.gets
